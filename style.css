@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chivo", sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --green-highlight: #54e6af;
+  --white-highlight: #ffffff;
+  --bg-color: #121725;
+  --txt-color: #c2cbe5;
+  --input-color: #2c344b;
+  --icon-color: #5a668a;
+}
+
+.container-mobile {
+  background: url("./assets/mobile/image-host.jpg");
+  position: relative;
+  overflow: hidden;
+}
+
+.container-mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(18, 23, 37, 0.9);
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  margin: 0 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 35%;
+  height: 35%;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 28px;
+  color: var(--green-highlight);
+}
+h1 span {
+  color: var(--white-highlight);
+  font-size: 28px;
+}
+h1,
+p {
+  text-align: center;
+}
+p,
+input {
+  color: var(--txt-color);
+}
+p {
+  font-weight: 100;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+}
+.icon {
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+}
+
+input {
+  background-color: var(--input-color);
+  border: none;
+}
+input,
+button {
+  border-radius: 50px;
+}
+button {
+  background-color: var(--green-highlight);
+}
